@@ -17,13 +17,13 @@ Personal configuration files for macOS.
 
 ## Setup
 
-Symlink the files you want into your home directory:
-
 ```sh
-ln -sf "$PWD/.zshrc" ~/.zshrc
-ln -sf "$PWD/.zprofile" ~/.zprofile
-# ... repeat for each file
+git clone https://github.com/kuod/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./install.sh
 ```
+
+`install.sh` symlinks all dotfiles into `$HOME`. Any existing file is backed up with a `.bak` extension before being replaced.
 
 ## Notable aliases
 
