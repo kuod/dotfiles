@@ -14,6 +14,7 @@ Personal configuration files for macOS.
 | `.vimrc` | Vim: syntax, search, indentation, Python/YAML/Markdown filetype settings |
 | `.xonshrc` | Xonsh shell: conda initialization |
 | `.condarc` | Conda: channel priority (`conda-forge` > `defaults`) |
+| `install.sh` | Symlinks all dotfiles into `$HOME`, backing up any existing files |
 
 ## Setup
 
