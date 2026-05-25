@@ -6,7 +6,7 @@ Personal configuration files for macOS.
 
 | File | Purpose |
 |------|---------|
-| `.zshrc` | Zsh interactive shell: aliases, prompt, internet radio, conda/Julia PATH |
+| `.zshrc` | Zsh interactive shell: history, navigation, completion, fzf, aliases, prompt, internet radio, conda/Julia PATH, zsh-syntax-highlighting, zsh-autosuggestions |
 | `.zprofile` | Zsh login shell: Homebrew environment (Apple Silicon) |
 | `.zshenv` | All Zsh invocations: Rust/Cargo PATH |
 | `.bash_profile` | Bash login shell: conda, Julia, Rust/Cargo PATH |
