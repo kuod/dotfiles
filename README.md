@@ -15,6 +15,7 @@ Personal configuration files for macOS.
 | `.xonshrc` | Xonsh shell: conda initialization |
 | `.condarc` | Conda: channel priority (`conda-forge` > `defaults`) |
 | `install.sh` | Symlinks all dotfiles into `$HOME`, backing up any existing files |
+| `LICENSE` | MIT license |
 
 ## Setup
 
