@@ -1,4 +1,26 @@
 
+# ─── History ────────────────────────────────────────────────────────────────
+
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
+
+# ─── Navigation ─────────────────────────────────────────────────────────────
+
+setopt AUTO_CD
+setopt AUTO_PUSHD
+alias ..="cd .."
+alias ...="cd ../.."
+
+# ─── Completion ─────────────────────────────────────────────────────────────
+
+autoload -Uz compinit && compinit
+
+# ─── fzf ────────────────────────────────────────────────────────────────────
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # ─── Aliases ────────────────────────────────────────────────────────────────
 
 # Long listing with hidden files, human-readable sizes, and extended attributes
