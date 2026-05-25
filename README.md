@@ -11,7 +11,7 @@ Personal configuration files for macOS.
 | `.zshenv` | All Zsh invocations: Rust/Cargo PATH |
 | `.bash_profile` | Bash login shell: conda, Julia, Rust/Cargo PATH |
 | `.tmux.conf` | tmux: prefix remap to `C-a`, pane splits with `|` / `-` |
-| `.vimrc` | Vim: syntax highlighting |
+| `.vimrc` | Vim: syntax, search, indentation, Python/YAML/Markdown filetype settings |
 | `.xonshrc` | Xonsh shell: conda initialization |
 | `.condarc` | Conda: channel priority (`conda-forge` > `defaults`) |
 
