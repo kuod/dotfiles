@@ -1,0 +1,6 @@
+# .condarc — conda configuration file
+# See: https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html
+
+channels:
+  - conda-forge   # community-maintained; generally has more up-to-date packages than defaults
+  - defaults      # Anaconda's official channel; fallback when a package isn't on conda-forge
