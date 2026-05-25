@@ -11,6 +11,7 @@ dotfiles=(
     .zprofile
     .zshenv
     .zshrc
+    .gitignore_global
 )
 
 for file in "${dotfiles[@]}"; do
