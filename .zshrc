@@ -33,7 +33,7 @@ alias editrc="vim ~/.zshrc && source ~/.zshrc"
 alias R="R --no-save"
 
 # Open RStudio as a new macOS app instance
-alias rstudio="open -n /Applications/"
+alias rstudio="open -n /Applications/RStudio.app"
 
 # ─── Prompt ─────────────────────────────────────────────────────────────────
 

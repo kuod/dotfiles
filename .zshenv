@@ -4,4 +4,4 @@
 # ─── Rust / Cargo ───────────────────────────────────────────────────────────
 # Adds ~/.cargo/bin to PATH so Rust-installed binaries (rustc, cargo, etc.) are available
 # in all shells, including non-interactive ones.
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

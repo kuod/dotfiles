@@ -19,8 +19,9 @@ for file in "${dotfiles[@]}"; do
     source="$DOTFILES_DIR/$file"
 
     if [ -e "$target" ] && [ ! -L "$target" ]; then
-        echo "Backing up existing $target -> $target.bak"
-        mv "$target" "$target.bak"
+        backup="$target.bak.$(date +%s)"
+        echo "Backing up existing $target -> $backup"
+        mv "$target" "$backup"
     fi
 
     ln -sf "$source" "$target"
