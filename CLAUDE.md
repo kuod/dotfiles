@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Personal macOS dotfiles, symlinked into `$HOME`. No build system or test suite — changes take effect after symlinking and sourcing the relevant file.
+Personal macOS dotfiles, symlinked into `$HOME`. No build system; `tests/run.sh` is a smoke test that runs in a scratch `$HOME`. Changes take effect after symlinking and sourcing the relevant file.
 
 ## Applying changes
 
