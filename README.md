@@ -14,18 +14,30 @@ Personal configuration files for macOS.
 | `.vimrc` | Vim: syntax, search, indentation, Python/YAML/Markdown filetype settings |
 | `.xonshrc` | Xonsh shell: conda initialization |
 | `.condarc` | Conda: channel priority (`conda-forge` > `defaults`) |
+| `.gitignore_global` | Global git ignore (`.DS_Store`, `.claude/settings.local.json`); install.sh sets `core.excludesfile` |
+| `tests/run.sh` | Smoke tests, run under a scratch `$HOME` |
 | `install.sh` | Symlinks all dotfiles into `$HOME`, backing up any existing files |
 | `LICENSE` | MIT license |
 
 ## Setup
 
 ```sh
-git clone https://github.com/kuod/dotfiles.git ~/dotfiles
-cd ~/dotfiles
+git clone https://github.com/kuod/dotfiles.git   # any location works
+cd dotfiles
 ./install.sh
 ```
 
-`install.sh` symlinks all dotfiles into `$HOME`. Any existing file is backed up with a `.bak` extension before being replaced.
+`install.sh` symlinks all dotfiles into `$HOME`. Any existing file is backed up as `<file>.bak.<epoch-seconds>` before being replaced.
+
+## Prerequisites (all optional; configs skip what is missing)
+
+Homebrew, `zsh-syntax-highlighting`, `zsh-autosuggestions`, `fzf`, `mplayer`/`mpg123` (radio aliases), miniconda3, rustup, juliaup.
+
+## Testing
+
+```sh
+tests/run.sh
+```
 
 ## Notable aliases
 
