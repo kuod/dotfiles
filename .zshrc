@@ -87,5 +87,11 @@ export PATH
 
 # ─── Plugins ────────────────────────────────────────────────────────────────
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Plugins are optional (brew install zsh-autosuggestions zsh-syntax-highlighting).
+# zsh-syntax-highlighting must be sourced last.
+_brew_prefix="${HOMEBREW_PREFIX:-/opt/homebrew}"
+[ -f "$_brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && \
+    source "$_brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+[ -f "$_brew_prefix/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && \
+    source "$_brew_prefix/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+unset _brew_prefix

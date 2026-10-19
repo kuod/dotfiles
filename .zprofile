@@ -4,4 +4,7 @@
 
 # Initialize Homebrew environment variables (PATH, MANPATH, INFOPATH, etc.)
 # Required on Apple Silicon Macs where Homebrew lives at /opt/homebrew instead of /usr/local.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+for _brew in /opt/homebrew/bin/brew /usr/local/bin/brew; do
+    [ -x "$_brew" ] && { eval "$("$_brew" shellenv)"; break; }
+done
+unset _brew
