@@ -23,7 +23,7 @@ autoload -Uz compinit && compinit
 
 # ─── Aliases ────────────────────────────────────────────────────────────────
 
-# Long listing with hidden files, human-readable sizes, and extended attributes
+# Long listing with hidden files, human-readable sizes
 alias ll="ls -laxho"
 
 # Edit and immediately reload this config in one step

@@ -13,7 +13,7 @@ After editing a file, reload it in the running shell:
 ```sh
 source ~/.zshrc       # zsh interactive config
 source ~/.zshenv      # zsh env vars (affects new shells)
-source ~/.bash_profile  # bash login config
+source ~/.bash_profile  # bash login config (run in bash)
 tmux source ~/.tmux.conf  # tmux (inside a session)
 ```
 
